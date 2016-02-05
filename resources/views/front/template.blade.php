@@ -17,7 +17,6 @@
         <link rel="apple-touch-icon-precomposed" href="{{ asset('images/ico/apple-touch-icon-72-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" href="{{ asset('images/ico/apple-touch-icon-57-precomposed.png') }}">
         
-        
         {!! HTML::style('css/animate.min.css') !!}
         {!! HTML::style('css/bootstrap.min.css') !!}
         {!! HTML::style('css/font-awesome.min.css') !!}
@@ -74,7 +73,7 @@
                         <li {!! classActivePath('/') !!}> {!! link_to('/','Inicio' ) !!} </li>
 		        <li {!! classActivePath('acerca') !!}> {!! link_to('acerca', 'Acerca de Nosotros') !!} </li>
                         <li {!! classActivePath('servicios') !!}> {!! link_to('servicios', 'Servicios') !!} </li>
-                        <li {!! classActivePath('portafolio') !!}> {!! link_to('portafolio', 'Portafolio') !!} </li>
+                        <li {!! classActivePath('galeria') !!}> {!! link_to('galeria', 'Galería') !!} </li>
                         <li {!! classActivePath('contact/create') !!}> {!! link_to('contact/create', 'Contacto') !!} </li>
 					
                         @if(session('statut') == 'admin')

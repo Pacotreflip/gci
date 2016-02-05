@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PortafolioController extends Controller
+class GaleriaController extends Controller
 {
-    public function portafolio()
+    public function galeria()
     {
-        return view('front.portafolio');
+        return view('front.galeria');
     }
 }

@@ -10,7 +10,7 @@ Route::get('/', [
 Route::get('acerca', 'AcercaController@Acerca');
 
 // Portafolio
-Route::get('portafolio', 'PortafolioController@portafolio');
+Route::get('galeria', 'GaleriaController@galeria');
 
 // Servicios
 
