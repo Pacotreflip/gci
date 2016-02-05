@@ -1,10 +1,9 @@
 @extends('front.template')
 @section('main')
 
-<section id="portfolio">
         <div class="container">
             <div class="center">
-               <h2>Galería</h2>
+               <hr><h2 class="intro-text text-center">Galería</h2><hr>
                <p class="lead">descripción</p>
             </div>
         
@@ -124,5 +123,4 @@
                 </div>
             </div>
         </div>
-</section><!--/#portfolio-item-->
 @stop

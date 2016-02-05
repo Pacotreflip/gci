@@ -1,8 +1,10 @@
 @extends('front.template')
 @section('main')
-
-<section id="content">
         <div class="container">
+            <div class="center">
+               <hr><h2 class="intro-text text-center">Acerca de Nosotros</h2><hr>
+               <p class="lead">descripción</p>
+            </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 wow fadeInDown">
                    <div class="tab-wrap"> 

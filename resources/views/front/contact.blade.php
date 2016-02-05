@@ -1,10 +1,9 @@
 @extends('front.template')
 @section('main')
-    <section id="contact-info">
-        <div class="center">                
-            <h2>Contactanos</h2>
-            <p class="lead">¿Cómo podemos ayudarte?</p>
-        </div>
+ <div class="center">
+               <hr><h2 class="intro-text text-center">Contactanos</h2><hr>
+               <p class="lead">descripción</p>
+            </div>
         <div class="gmap-area">
             <div class="container">
                 <div class="row">
@@ -93,8 +92,6 @@
                 {!! Form::close() !!}
             </div><!--/.row-->
         </div><!--/.container-->
-    </section><!--/#contact-page-->
-
 			</div>
 		</div>
 	</div>
