@@ -17,7 +17,6 @@
         <link rel="apple-touch-icon-precomposed" href="{{ asset('images/ico/apple-touch-icon-72-precomposed.png') }}">
         <link rel="apple-touch-icon-precomposed" href="{{ asset('images/ico/apple-touch-icon-57-precomposed.png') }}">
         
-        
         {!! HTML::style('css/animate.min.css') !!}
         {!! HTML::style('css/bootstrap.min.css') !!}
         {!! HTML::style('css/font-awesome.min.css') !!}
@@ -38,16 +37,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>      (55)36-89-41-70</p></div>
+                        <div class="top-number"><p><i class="fa fa-phone"></i>      (55)36-89-41-70</p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
                             <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="mailto:correo@correo.com"><i class="fa fa-envelope "></i></a></li>
+                                @if(session('statut') != 'admin')
+                                <li><a href="{{URL::to('auth/login')}}"><i class="fa fa-sign-in"></i></a></li>
+                                @else
+                                <li><a href="{{URL::to('auth/logout')}}"><i class="fa fa-sign-out"></i></a></li>
+                                @endif
                             </ul>
                        </div>
                     </div>
@@ -72,18 +73,16 @@
                         <li {!! classActivePath('/') !!}> {!! link_to('/','Inicio' ) !!} </li>
 		        <li {!! classActivePath('acerca') !!}> {!! link_to('acerca', 'Acerca de Nosotros') !!} </li>
                         <li {!! classActivePath('servicios') !!}> {!! link_to('servicios', 'Servicios') !!} </li>
+                        <li {!! classActivePath('galeria') !!}> {!! link_to('galeria', 'Galería') !!} </li>
                         <li {!! classActivePath('contact/create') !!}> {!! link_to('contact/create', 'Contacto') !!} </li>
 					
                         @if(session('statut') == 'admin')
                         <li> {!! link_to_route('admin', 'Panel de Administrador') !!} </li>
-                        <li> {!! link_to('auth/logout', 'Cerrar Sesión') !!} </li>
-                        @else
-                        <li {!! classActivePath('auth/login') !!}> {!! link_to('auth/login', 'Iniciar Sesión') !!} </li> 
                         @endif   
                         
                     </ul>
                 </div>
-            </div><!--/.container-->
+            </div><!--/.container-->    
         </nav><!--/nav-->
         @yield('header')
     </header><!--/header-->
@@ -96,7 +95,9 @@
 		@endif
 	<footer role="contentinfo">
 		 @yield('footer')
-		<p class="text-center"><small>GC Ingeniería en Aire S.A. de C.V. <br>2016</small></p>
+                 <p class="text-center"><small><b>GC Ingeniería en Aire S.A. de C.V. 2016</b><br>
+                         Calle Tonatico No. 287 Colonia Las Fuentes Municipio Nezahualcóyotl Estado de México C.P. 57600<br>
+                         Telefono : (55) 36 - 89 - 41 - 70 </small></p>
 	</footer>
 	
     
