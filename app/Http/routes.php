@@ -9,6 +9,9 @@ Route::get('/', [
 // Acerca de Nosotros
 Route::get('acerca', 'AcercaController@Acerca');
 
+// Portafolio
+Route::get('portafolio', 'PortafolioController@portafolio');
+
 // Servicios
 
 Route::get('servicios','ServiciosController@servicios');

@@ -72,6 +72,7 @@
                         <li {!! classActivePath('/') !!}> {!! link_to('/','Inicio' ) !!} </li>
 		        <li {!! classActivePath('acerca') !!}> {!! link_to('acerca', 'Acerca de Nosotros') !!} </li>
                         <li {!! classActivePath('servicios') !!}> {!! link_to('servicios', 'Servicios') !!} </li>
+                        <li {!! classActivePath('portafolio') !!}> {!! link_to('portafolio', 'Portafolio') !!} </li>
                         <li {!! classActivePath('contact/create') !!}> {!! link_to('contact/create', 'Contacto') !!} </li>
 					
                         @if(session('statut') == 'admin')
