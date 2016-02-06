@@ -93,12 +93,10 @@
 		@if(isset($info))
 			@include('partials/error', ['type' => 'info', 'message' => $info])
 		@endif
-	<footer role="contentinfo">
+                <footer role="contentinfo" class="footer">
 		 @yield('footer')
-                 <p class="text-center"><small><b>GC Ingeniería en Aire S.A. de C.V. 2016</b><br>
-                         Calle Tonatico No. 287 Colonia Las Fuentes Municipio Nezahualcóyotl Estado de México C.P. 57600<br>
-                         Telefono : (55) 36 - 89 - 41 - 70 </small></p>
-	</footer>
+                 <p class="text-center"><small><b>GC Ingeniería en Aire S.A. de C.V. 2016</b> <br> Calle Tonatico No. 287 Colonia Las Fuentes Municipio Nezahualcóyotl Estado de México C.P. 57600</small></p>
+                </footer>
 	
     
         {!! HTML::script('js/jquery.js') !!}

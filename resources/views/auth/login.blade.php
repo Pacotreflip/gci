@@ -16,7 +16,6 @@
         {!! Form::control('password', 6, 'password', $errors, trans('front/login.password')) !!}
         {!! Form::check('memory', trans('front/login.remind')) !!}
         <input type="submit" class="btn btn-primary" value="Enviar">
-	{!! link_to('password/email', trans('front/login.forget')) !!}
     {!! Form::close() !!}
 </div>
 @stop
