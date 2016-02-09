@@ -89,7 +89,7 @@
 
             <div class="row">
                 <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-md-4 col-sm-6 wow " data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-bullhorn"></i>
                             <h2>Fresh and Clean</h2>
@@ -97,10 +97,10 @@
                         </div>
                     </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
-                            <i class="fa fa-angle-right"></i>                            
-                            <h2>Retina ready</h2>
+                            <i class="fa fa-cloud-download"></i>
+                            <h2>Easy to customize</h2>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
                         </div>
                     </div><!--/.col-md-4-->
@@ -128,20 +128,12 @@
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
                         </div>
                     </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-heart"></i>
-                            <h2>Labore et dolore</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div><!--/.col-md-4-->
                 </div><!--/.services-->
             </div><!--/.row-->    
         </div><!--/.container-->
     </section><!--/#feature-->
 
-    <section id="recent-works">
+<!--    <section id="recent-works">
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Recent Works</h2>
@@ -252,9 +244,9 @@
                         </div>
                     </div>
                 </div>   
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#recent-works-->
+            </div>/.row
+        </div>/.container
+    </section>/#recent-works-->
 
     <section id="services" class="service-item">
 	   <div class="container">
