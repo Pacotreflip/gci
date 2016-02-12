@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'gcingenieria.com.mx.mysql',
-			'database'  => 'gcingenieria_com_mx',
-			'username'  => 'gcingenieria_com_mx',
-			'password'  => 'E9Zzd2Gc',
+			'host'      => env('DB_HOST'),
+			'database'  => env('DB_DATABASE'),
+			'username'  => env('DB_USERNAME'),
+			'password'  => env('DB_PASSWORD'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
