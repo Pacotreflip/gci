@@ -1,19 +1,17 @@
 @extends('front.template')
 @section('main')
 
-<section id="contact-info">
     <div class="container">
-        <div class="center">
-            <hr><h2 class="intro-text text-center">Contactanos</h2><hr>
-            <p class="lead">descripción</p>
+        <div class="center wow fadeInDown">
+            <hr>{{ HTML::image('images/titulos/contacto.png','', array('class'=>'img-responsive center-block')) }}<hr>
         </div>
-
-        <div class="gmap-area">
+        
+        <div class="gmap-area wow fadeInUp"> 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 text-center">
                         <div class="gmap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.150494264819!2d-99.03328727900026!3d19.405902527249843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fcc28874ca6d%3A0x828dd47bb923a1be!2sCalle+Tonatico+287%2C+Las+Fuentes%2C+57600+Nezahualc%C3%B3yotl%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1454264835231" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src=    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.150494264819!2d-99.03328727900026!3d19.405902527249843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fcc28874ca6d%3A0x828dd47bb923a1be!2sCalle+Tonatico+287%2C+Las+Fuentes%2C+57600+Nezahualc%C3%B3yotl%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1454264835231" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -46,15 +44,14 @@
             </div><!--/.container-->
         </div><!--/.gmap_area -->
     </div>
-</section>
 
 <section id="contact-form">
     <div class="container">
-        <div class="center">
-            <hr><h2 class="intro-text text-center">Mándanos un mensaje</h2><hr>
+        <div class="center wow fadeInDown">
+            <hr>{{ HTML::image('images/titulos/escribenos.png','', array('class'=>'img-responsive center-block')) }}<hr>
         </div>
 
-        <div class="row contact-wrap"> 
+        <div class="row contact-wrap wow fadeInUp"> 
             <div class="status alert alert-success" style="display: none"></div>
             {!! Form::open(['url' => 'contact', 'method' => 'post', 'role' => 'form', 'class' => 'contact-form']) !!}	
             <div class="col-sm-5 col-sm-offset-1">
@@ -68,7 +65,7 @@
                 </div>
                 <div>
                     <label>Teléfono</label>
-                    <input type="number" class="form-control">
+                    <input type="tel" class="form-control">
                 </div>
                 <div>
                     <label>Empresa</label>

@@ -61,14 +61,13 @@
             <nav class="navbar navbar-inverse" role="banner">
                 <div class="container">
                     <div class="navbar-header">
+                        <a class="navbar-brand" href="{{URL::to('/')}}">{{ HTML::image('images/logo.png') }}</a>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Navegación</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>    
-                        
-                        <a class="navbar-brand" href="{{URL::to('/')}}">{{ HTML::image('images/logo.png') }}</a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
@@ -86,26 +85,43 @@
                     </div>
                 </div><!--/.container-->    
             </nav><!--/nav-->
-            
-            @yield('header')
-        
-        </header><!--/header-->
-        
-        @yield('main')
-        
-        @if(session()->has('ok'))
+            @if(session()->has('ok'))
         @include('partials/error', ['type' => 'success', 'message' => session('ok')])
         @endif	
         @if(isset($info))
         @include('partials/error', ['type' => 'info', 'message' => $info])
-        @endif
-
-        <footer role="contentinfo" class="footer">
-          
-            @yield('footer')
-            
-            <p class="text-center"><small><b>GC Ingeniería en Aire S.A. de C.V. 2016</b> <br> Calle Tonatico No. 287 Colonia Las Fuentes Municipio Nezahualcóyotl Estado de México C.P. 57600</small></p>
-        </footer>
+        @endif            
+        @yield('header')
+        
+        </header><!--/header-->
+        @yield('main')
+        
+        <section id="conatcat-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <div class="pull-left">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="media-body">
+                                <h2>¿Tienes preguntas o necesitas información?</h2>
+                                <p>Llámanos (55)36-89-41-70</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-->    
+        </section><!--/#conatcat-info-->
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center">&copy; 2016 <b>GC Ingeniería en Aire S.A. de C.V.</b> Todos los derechos reservados.</p>
+                    <p class="text-center">Calle Tonatico No. 287 Colonia Las Fuentes Municipio Nezahualcóyotl Estado de México C.P. 57600</p>
+                </div>
+            </div>
+        </footer><!--/#footer-->
         
         {!! HTML::script('js/jquery.js') !!}
         {!! HTML::script('js/bootstrap.min.js') !!}

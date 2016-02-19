@@ -377,11 +377,22 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .slide-margin{
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
-#main-slider .carousel h2 {
-  color: #fff;
+#main-slider .carousel .carousel-content h1, h2 {
+color: black;
+}
+
+#main-slider .carousel .carousel-content-b h1 {
+  color: black;
+  h2{
+      color:black;
+  }
+}
+
+#main-slider .carousel .carousel-content-w h2, h1 {
+  color: white;
 }
 
 #main-slider .carousel .btn-slide {
@@ -410,7 +421,7 @@ input.search-form:hover {
   width: 100%;
   display: block !important;
   height: 730px;
-  -webkit-transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 500 ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
   transition: opacity ease-in-out 500ms;
@@ -1520,9 +1531,8 @@ ul.social_icons li  a i{
 
 .footer {
   background: none repeat scroll 0 0 #2E2E2E;
-  border-top: 5px solid #C52D2F;
+  border-top: 5px solid #13277F;
   height: 84px;
-  margin-top: 110px;
 }
 
 .footer_left {
@@ -1533,6 +1543,13 @@ ul.social_icons li  a i{
   color: #FFFFFF;
   font-size: 12px;
   margin-top: 15px;
+}
+
+.text-center {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /*************************

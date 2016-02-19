@@ -2,22 +2,22 @@
 @section('main')
         <div class="container">
             <div class="center">
-               <hr><h2 class="intro-text text-center">¿Quiénes Somos?</h2><hr>
+               <hr>{{ HTML::image('images/titulos/quienes.png','', array('class'=>'img-responsive center-block')) }}<hr>
                <p class="lead list-group-item">Una empresa joven en años, con personal altamente calificado <br> con una gran experiencia en la instalación de sistemas de aire para la industría.</p>
             </div>
             
             <div class="center">
-               <hr><h2 class="intro-text text-center">Nuestra Misión</h2><hr>
+               <hr>{{ HTML::image('images/titulos/mision.png','', array('class'=>'img-responsive center-block')) }}<hr>
                <p class="lead list-group-item">Ofrecer las mejores propuestas, proyecciones, ejecuciones y soluciones a nuestros clientes, acompañada de un excelente servicio y relación laboral, para así garantizar la mayor satisfacción a las necesidades de nuestros clientes.</p>
             </div>
             
             <div class="center">
-               <hr><h2 class="intro-text text-center">Nuestra Visión</h2><hr>
+               <hr>{{ HTML::image('images/titulos/vision.png','', array('class'=>'img-responsive center-block')) }}<hr>
                <p class="lead list-group-item">Realizar un crecimiento en todas nuestras áreas para brindar un mejor servicio mediante la actualización del desarrollo técnico y humano, y así, brindar una excelente calidad siendo una empresa totalmente responsable.</p>
             </div> 
             
             <div class="center">
-               <hr><h2 class="intro-text text-center">Nuestros Valores</h2><hr>
+               <hr>{{ HTML::image('images/titulos/valores.png','', array('class'=>'img-responsive center-block')) }}<hr>
             </div>
                <div class="col-sm-8" >
                    <div class="tab-wrap"> 

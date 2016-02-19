@@ -1,12 +1,12 @@
 @extends('front.template')
 @section('main')
-<section id="portfolio">
     <div class="container">
-        <div class="center">
-           <hr><h2 class="intro-text text-center">Galería</h2><hr>
-           <p class="lead">Algúnas de nuestras instalaciones.</p>
+        <div class="center wow fadeInDown">
+            <hr>{{ HTML::image('images/titulos/galeria.png','', array('class'=>'img-responsive center-block')) }}<hr>
         </div>
+        <section id="portfolio">
 
+        <div class="center wow fadeInUp">
 
         <ul class="portfolio-filter text-center">
             <li><a class="btn btn-default active" href="#" data-filter="*">Todo</a></li>
@@ -176,6 +176,8 @@
                 </div><!--/.portfolio-item-->
             </div>
         </div>
-    </div>
+        </div>
+    
 </section>
+        </div>
 @stop
