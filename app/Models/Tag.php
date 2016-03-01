@@ -10,15 +10,9 @@ class Tag extends Model  {
 	 * @var string
 	 */
 	protected $table = 'tags';
-
-	/**
-	 * Many to Many relation
-	 *
-	 * @return Illuminate\Database\Eloquent\Relations\belongToMany
-	 */
-	public function posts()
-	{
-		return $this->belongsToMany('App\Models\Post');
+        protected $primaryKey = 'id_tag';
+        
+	public function posts(){
+            return $this->belongsToMany('App\Models\Post', 'posts_tags','id_tag','id_post');
 	}
-
 }

@@ -10,10 +10,9 @@ Route::get('/', [
 Route::get('acerca', 'AcercaController@Acerca');
 
 // Portafolio
-Route::get('galeria', 'GaleriaController@galeria');
+Route::get('galeria', 'PostController@galeria');
 
 // Servicios
-
 Route::get('servicios','ServiciosController@servicios');
 
 // Admin

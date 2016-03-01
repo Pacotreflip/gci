@@ -13,35 +13,9 @@ class Post extends Model  {
 	 * @var string
 	 */
 	protected $table = 'posts';
+        protected $primaryKey = 'id_post';
 
-	/**
-	 * One to Many relation
-	 *
-	 * @return Illuminate\Database\Eloquent\Relations\BelongsTo
-	 */
-	public function user() 
-	{
-		return $this->belongsTo('App\Models\User');
+	public function tags(){
+            return $this->belongsToMany('App\Models\Tag', 'posts_tags','id_post','id_tag');
 	}
-
-	/**
-	 * Many to Many relation
-	 *
-	 * @return Illuminate\Database\Eloquent\Relations\belongToMany
-	 */
-	public function tags()
-	{
-		return $this->belongsToMany('App\Models\Tag');
-	} 
-
-	/**
-	 * One to Many relation
-	 *
-	 * @return Illuminate\Database\Eloquent\Relations\hasMany
-	 */
-	public function comments()
-	{
-		return $this->hasMany('App\Models\Comment');
-	}
-
 }
