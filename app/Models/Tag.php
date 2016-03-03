@@ -11,6 +11,7 @@ class Tag extends Model  {
 	 */
 	protected $table = 'tags';
         protected $primaryKey = 'id_tag';
+        public $timestamps = false;
         
 	public function posts(){
             return $this->belongsToMany('App\Models\Post', 'posts_tags','id_tag','id_post');

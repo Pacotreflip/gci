@@ -170,6 +170,8 @@ return [
 		App\Providers\RouteServiceProvider::class,
 		App\Services\Html\HtmlServiceProvider::class,
 		Bestmomo\Filemanager\FilemanagerServiceProvider::class,
+                Intervention\Image\ImageServiceProvider::class,
+
 
 	],
 
@@ -220,6 +222,8 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 		'Form'		=> Collective\Html\FormFacade::class,
 		'HTML'		=> Collective\Html\HtmlFacade::class,
+            'Image' => Intervention\Image\Facades\Image::class,
+
 
 	],
 

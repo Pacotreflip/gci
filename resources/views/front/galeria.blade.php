@@ -12,7 +12,7 @@
             <ul class="portfolio-filter text-center">
                 <li><a class="btn btn-default active" href="#" data-filter="*">Todo</a></li>
                 @foreach($tags as $t)
-                <li><a class="btn btn-default" href="#" data-filter=".{{$t->clave}}">{{$t->nombre}}</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".{{$t->clave}}">{{strtoupper($t->clave)}}</a></li>
                 @endforeach
             </ul><!--/#portfolio-filter-->
 
@@ -27,14 +27,14 @@
                          @foreach($post->tags as $tag) 
                          {{$tag->clave}} 
                          @endforeach 
-                         2015 col-xs-12 col-sm-4 col-md-3">
+                         col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
                             {{ HTML::image($post->imagens,'', array('class'=>'img-responsive')) }}
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">{{$post->titulo}}</a></h3>
                                     <p>{{$post->descripcion}}</p>
-                                    <a class="preview" href="{{ asset($post->imagens) }}" rel="prettyPhoto"><i class="fa fa-eye"></i> Ver Completa</a>
+                                    <a class="preview" href="{{ asset($post->imagenl) }}" rel="prettyPhoto"><i class="fa fa-eye"></i> Ver Completa</a>
                                 </div> 
                             </div>
                         </div>

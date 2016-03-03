@@ -46,11 +46,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @if(session('statut') == 'admin')
                     {!! link_to_route('admin', trans('back/admin.administration'), [], ['class' => 'navbar-brand']) !!}
-                @else
-                    {!! link_to_route('blog.index', trans('back/admin.redaction'), [], ['class' => 'navbar-brand']) !!}
-                @endif
+                
             </div>
             <!-- Menu supérieur -->
             <ul class="nav navbar-right top-nav">
@@ -72,7 +69,10 @@
                         </li>
                         <li {!! classActivePath('contact') !!}>
                             <a href="{!! url('contact') !!}"><span class="fa fa-fw fa-envelope"></span> {{ trans('back/admin.messages') }}</a>
-                        </li>                 
+                        </li>  
+                        <li {!! classActivePath('posts') !!}>
+                            <a href="{!! url('posts') !!}"><span class="fa fa-fw fa-picture-o"></span> Galería</a>
+                        </li> 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

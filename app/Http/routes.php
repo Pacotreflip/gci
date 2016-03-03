@@ -27,6 +27,24 @@ Route::resource('contact', 'ContactController', [
 	'except' => ['show', 'edit']
 ]);
 
+Route::resource('posts', 'PostController', [
+	'except' => ['show', 'edit']
+]);
+
+Route::delete('post/destroy/{id}', [
+	'uses' => 'PostController@destroy', 
+	'as' => 'post.destroy'
+]);
+
+Route::post('post/store', [
+	'uses' => 'PostController@store', 
+	'as' => 'post.store'
+]);
+
+Route::get('post/create', [
+	'uses' => 'PostController@create', 
+	'as' => 'post.create'
+]);
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
