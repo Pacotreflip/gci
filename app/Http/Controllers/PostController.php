@@ -14,23 +14,10 @@ class PostController extends Controller
     
     function destroy($id){
         $post = \App\Models\Post::find($id);
-        
-        
+   
         unlink(public_path($post->imagens));
         unlink(public_path($post->imagenl));
-        
-//        foreach($post->tags->all() as $tp){
-//            $cont_etiq = 0;
-//            foreach(\App\Models\Tag::all() as $t)
-//            {
-//                if($t->id_tag == $tp->id_tag)
-//                {
-//                    $cont_etiq ++;
-//                }
-//            }    
-//            
-//        }
-        $post->tags()->detach();
+
         $post->delete();
         return redirect('posts');
     }
@@ -103,8 +90,25 @@ class PostController extends Controller
     {
         $posts = \App\Models\Post::all();   
         $tags = \App\Models\Tag::all();
-       
+        $tagsUsados = [];
+        $tagsTotal = [];
+        $contTags = 0;
+        $contTagsTotal = 0;
+
+        foreach($posts as $p){
+            foreach($p->tags as $t){
+                $tagsUsados[$contTags] = $t->clave;
+                $contTags ++;
+            }
+        }
         
-        return view('front.galeria')->with(array('posts' => $posts, 'tags' => $tags));
+        foreach($tags as $tag){
+            $tagsTotal[$contTagsTotal] = $tag->clave;
+            $contTagsTotal ++;
+        }
+        
+        $tagsUsadosNeto = array_intersect($tagsTotal, $tagsUsados);
+        
+        return view('front.galeria')->with(array('posts' => $posts, 'tags' => $tags, 'tt' => $tagsUsadosNeto));
     }
 }

@@ -11,8 +11,8 @@
 
             <ul class="portfolio-filter text-center">
                 <li><a class="btn btn-default active" href="#" data-filter="*">Todo</a></li>
-                @foreach($tags as $t)
-                <li><a class="btn btn-default" href="#" data-filter=".{{$t->clave}}">{{strtoupper($t->clave)}}</a></li>
+                @foreach($tt as $t)
+                <li><a class="btn btn-default" href="#" data-filter=".{{$t}}">{{strtoupper($t)}}</a></li>
                 @endforeach
             </ul><!--/#portfolio-filter-->
 
