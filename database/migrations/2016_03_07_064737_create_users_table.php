@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateUsersTable extends Migration {
 
@@ -18,9 +18,10 @@ class CreateUsersTable extends Migration {
 			$table->string('username', 30)->unique();
 			$table->string('email')->unique();
 			$table->string('password', 60);
-			$table->integer('role_id')->unsigned();			
+			$table->integer('role_id')->unsigned()->index('users_role_id_foreign');
 		});
 	}
+
 
 	/**
 	 * Reverse the migrations.
