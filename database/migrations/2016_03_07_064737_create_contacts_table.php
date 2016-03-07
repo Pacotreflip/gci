@@ -18,7 +18,8 @@ class CreateContactsTable extends Migration {
 			$table->string('name');
 			$table->string('email');
 			$table->text('text', 65535);
-			$table->boolean('seen')->default(0);
+			$table->boolean('seen')->default(false);
+			$table->timestamps();
 		});
 	}
 

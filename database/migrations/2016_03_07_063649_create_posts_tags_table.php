@@ -14,10 +14,9 @@ class CreatePostsTagsTable extends Migration {
 	{
 		Schema::create('posts_tags', function(Blueprint $table)
 		{
-			$table->increments('id_posts_tags');
+			$table->increments('id');
 			$table->integer('id_post')->index('idpost_fore_idx');
 			$table->integer('id_tag')->index('idtag_fore_idx');
-			$table->primary(['id_posts_tags','id_post','id_tag']);
 		});
 	}
 

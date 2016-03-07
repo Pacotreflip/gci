@@ -19,7 +19,10 @@ class CreateUsersTable extends Migration {
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->integer('role_id')->unsigned()->index('users_role_id_foreign');
-		});
+			$table->boolean('seen')->default(false);
+			$table->boolean('valid')->default(false);
+			$table->boolean('confirmed')->default(false);
+                });
 	}
 
 
