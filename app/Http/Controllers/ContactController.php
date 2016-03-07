@@ -11,11 +11,11 @@ class ContactController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct()
-	{
-		$this->middleware('admin', ['except' => ['create', 'store']]);
-		$this->middleware('ajax', ['only' => 'update']);
-	}
+//	public function __construct()
+//	{
+//		$this->middleware('admin', ['except' => ['create', 'store']]);
+//		$this->middleware('ajax', ['only' => 'update']);
+//	}
 
 	/**
 	 * Display a listing of the resource.

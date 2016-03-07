@@ -10,6 +10,7 @@ class Role extends Model  {
 	 * @var string
 	 */
 	protected $table = 'roles';
+        public $timestamps = false;
 
 	/**
 	 * One to Many relation

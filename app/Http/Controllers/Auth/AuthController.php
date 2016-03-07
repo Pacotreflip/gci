@@ -23,10 +23,10 @@ class AuthController extends Controller
 	 *
 	 * @return void
 	 */
-	public function __construct()
-	{
-		$this->middleware('guest', ['except' => 'getLogout']);
-	}
+//	public function __construct()
+//	{
+//		$this->middleware('guest', ['except' => 'getLogout']);
+//	}
 
 	/**
 	 * Handle a login request to the application.
