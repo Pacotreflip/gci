@@ -42,8 +42,8 @@
                         <div class="col-sm-6 col-xs-8">
                             <div class="social">
                                 <ul class="social-share">
-                                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="mailto:correo@correo.com"><i class="fa fa-envelope "></i></a></li>
+                                    <li><a href="https://www.facebook.com/GCIngenieriaAire" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="mailto:gazpargloria@gcingenieria.com.mx"><i class="fa fa-envelope "></i></a></li>
                                     
                                     @if(session('statut') != 'admin')
                                     <li><a href="{{URL::to('auth/login')}}"><i class="fa fa-sign-in"></i></a></li>
@@ -135,15 +135,15 @@
         {!! HTML::script('js/plugins.js') !!}
         
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-	</script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-74165520-1', 'auto');
+            ga('send', 'pageview');
+        </script>
         
 	@yield('scripts')
     </body>

@@ -4,26 +4,34 @@
 <section id="main-slider" class="no-margin">
         <div class="carousel slide">
             <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="0"></li>
                 <li data-target="#main-slider" data-slide-to="1"></li>
                 <li data-target="#main-slider" data-slide-to="2"></li>
+                <li data-target="#main-slider" data-slide-to="3"></li>
+                <li data-target="#main-slider" data-slide-to="4"></li>
+                <li data-target="#main-slider" data-slide-to="5" class="active"></li>
             </ol>
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(images/slider/bg1.jpg)">
+                <div class="item carousel" style="background-image: url(images/slider/bg1.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content-w">
                                     <h1 class="animation animated-item-1">GC Ingeniería en Aire</h1>
-                                    <h2 class="animation animated-item-2">Elaboración de Ingeniería, diseño y ejecución de sistemas de aire acondicionado, clasificado, filtrado y ventilación.</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <h2 class="animation animated-item-2">
+                                        <i class="fa fa-caret-right"></i>Elaboración de Ingeniería, diseño y ejecución de sistemas de aire acondicionado, clasificado, filtrado y ventilación<br><br>
+                                        <i class="fa fa-caret-right"></i>Contamos con distribución de equipos de aire acondicionado de las marcas: Carrier, York, Trane, Mitsubishi<br><br>
+                                        <i class="fa fa-caret-right"></i>Filtros de las Marcas: American air Filters AAF, Veco, Camfil, Falndes<br>
+                                    
+                                    </h2>
+                                    {!! link_to('acerca','Ver Más', array('class'=>'btn-slide animation animated-item-3')) !!}
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="images/slider/img1.png" class="img-responsive">
+                            <div class="col-sm-6 hidden-xs animation animated-item-4 center-block">
+                                <div class="slider-img center-block">
+                                    <img src="images/slider/img1.png" class="img-responsive center-block">
                                 </div>
                             </div>
 
@@ -36,9 +44,21 @@
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content-b">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <h1 class="animation animated-item-1">Mini-Split </h1>
+                                    <h2 class="animation animated-item-2">
+                                        <i class="fa fa-caret-right"></i>Auto Apagado<br>
+                                        <i class="fa fa-caret-right"></i>Filtro con Carbón Activado<br>
+                                        <i class="fa fa-caret-right"></i>Control de flujo de aire automático<br>
+                                        <i class="fa fa-caret-right"></i>Función Turbo<br>
+                                        <i class="fa fa-caret-right"></i>Reloj programable<br>
+                                        <i class="fa fa-caret-right"></i>Panel de LED<br>
+                                        <i class="fa fa-caret-right"></i>Función Auto Encendido<br>
+                                        <i class="fa fa-caret-right"></i>Filtro de catalizador frío<br>
+                                        <i class="fa fa-caret-right"></i>Condensador con protección anti-corrosión
+
+                                        
+                                    </h2>
+                                    {!! link_to('galeria','Ver Más', array('class'=>'btn-slide animation animated-item-3')) !!}
                                 </div>
                             </div>
 
@@ -51,25 +71,109 @@
                         </div>
                     </div>
                 </div><!--/.item-->
+                
+                <div class="item carousel" style="background-image: url(images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content-w">
+                                    <h1 class="animation animated-item-1">Aire Acondicionado Compacto 50ZPB</h1>
+                                    <h2 class="animation animated-item-2">
+                                        <i class="fa fa-caret-right"></i>Refrigerante Puron®<br>
+                                        <i class="fa fa-caret-right"></i>De 2 a 5 toneladas de capacidad de enfriamiento<br>
+                                        <i class="fa fa-caret-right"></i>Desde 77 dB (silencioso como una aspiradora)<br>
+                                        <i class="fa fa-caret-right"></i>Compresor scroll<br>
+                                        <i class="fa fa-caret-right"></i>Base a prueba de la formación de óxido con drenaje integrado<br>
+                                        <i class="fa fa-caret-right"></i>Interruptor para pérdida de carga<br>
+                                        <i class="fa fa-caret-right"></i>Rejilla de persiana<br>
+                                        <i class="fa fa-caret-right"></i>Utiliza termostato estándar
+                                    </h2>
+                                    {!! link_to('galeria','Ver Más', array('class'=>'btn-slide animation animated-item-3')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/slider/img3.png" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                
+                <div class="item carousel" style="background-image: url(images/slider/bg2.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content-b">
+                                    <br><br><br>
+                                    <h1 class="animation animated-item-1">UMA tipo Bag-in Bag-out marca GC</h1>
+                                    <h2 class="animation animated-item-2">
+                                        <i class="fa fa-caret-right"></i>Con perfil tubular Galvanizado<br><br>
+                                        <i class="fa fa-caret-right"></i>Aluminio o Acero Inoxidable  
+                                    </h2>
+                                    {!! link_to('galeria','Ver Más', array('class'=>'btn-slide animation animated-item-3')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/slider/img4.png" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
 
                 <div class="item carousel" style="background-image: url(images/slider/bg3.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content-w">
-                                    <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <h1 class="animation animated-item-1">Filtros "American Air Filter"</h1>
+                                    <h2 class="animation animated-item-2">
+                                        <br>
+                                        <i class="fa fa-caret-right"></i> Eficiencia Mecánica<br>
+                                        <i class="fa fa-caret-right"></i> Forma y ajuste diferente a cualquier otro pliegue disponible actualmente<br>
+                                        <i class="fa fa-caret-right"></i> <b>Soporte DURAFLEX</b> elaborado con fibra sin necesidad de alambres<br>
+                                    </h2>
+                                    {!! link_to('galeria','Ver Más', array('class'=>'btn-slide animation animated-item-3')) !!}
                                 </div>
                             </div>
                             <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
-                                    <img src="images/slider/img3.png" class="img-responsive">
+                                    <img src="images/slider/img5.png" class="img-responsive">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
+                
+                <div class="item active" style="background-image: url(images/slider/bg3.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content-w">
+                                    <h1 class="animation animated-item-1">GC Ingeniería presente en <br>Expo Farma 2016.</h1>
+                                    <h2 class="animation animated-item-2">
+                                        <br><br>                                        Del 13 al 15 de Abril del 2016 <br>
+                                        En el WTC de la Ciudad de México<br><br>
+                                        ¡Los esperamos en el stand 1328 y 1330!
+                                    </h2>
+                                    <a href="http://www.e-ntegrated.com/e-nscribe/iniciofarma16.asp" target="_blank" class="btn-slide animation amimated-item-3">Registrate Aquí</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/slider/expofarma.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
         <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
@@ -80,137 +184,9 @@
         </a>
     </section><!--/#main-slider-->
     
-    <section id="middle">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 wow fadeInDown">
-                    <div class="skill">
-                        <h2>Our Skills</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <div class="progress-wrap">
-                            <h3>Graphic Design</h3>
-                            <div class="progress">
-                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                                <span class="bar-width">85%</span>
-                              </div>
-
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>HTML</h3>
-                            <div class="progress">
-                              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                               <span class="bar-width">95%</span>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>CSS</h3>
-                            <div class="progress">
-                              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="bar-width">80%</span>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>Wordpress</h3>
-                            <div class="progress">
-                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                <span class="bar-width">90%</span>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div><!--/.col-sm-6-->
-
-                <div class="col-sm-6 wow fadeInDown">
-                    <div class="accordion">
-                        <h2>Why People like us?</h2>
-                        <div class="panel-group" id="accordion1">
-                          <div class="panel panel-default">
-                            <div class="panel-heading active">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-
-                            <div id="collapseOne1" class="panel-collapse collapse in">
-                              <div class="panel-body">
-                                  <div class="media accordion-inner">
-                                        <div class="pull-left">
-                                            <img class="img-responsive" src="images/accordion1.png">
-                                        </div>
-                                        <div class="media-body">
-                                             <h4>Adipisicing elit</h4>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                                        </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseTwo1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseThree1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseFour1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                              </div>
-                            </div>
-                          </div>
-                        </div><!--/#accordion1-->
-                    </div>
-                </div>
-
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#middle-->
+    <div class="container">
+        <br><hr><br>
+    </div>
 
     <section id="partner">
         <div class="container">
@@ -234,16 +210,6 @@
             </div>        
         </div><!--/.container-->
     </section><!--/#partner-->
-@stop
-
-@section('scripts')
-<script type='text/javascript'>
-    $(document).ready(function() {
-         $('.carousel').carousel({
-             interval: 6000
-         })
-    });    
-</script>
 @stop
 
 

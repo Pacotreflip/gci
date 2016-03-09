@@ -1,24 +1,8 @@
 @extends('front.template')
 @section('main')
         <div class="container">
-            <div class="center">
-               <hr>{{ HTML::image('images/titulos/quienes.png','', array('class'=>'img-responsive center-block')) }}<hr>
-               <p class="lead list-group-item">Una empresa joven en años, con personal altamente calificado <br> con una gran experiencia en la instalación de sistemas de aire para la industría.</p>
-            </div>
-            
-            <div class="center">
-               <hr>{{ HTML::image('images/titulos/mision.png','', array('class'=>'img-responsive center-block')) }}<hr>
-               <p class="lead list-group-item">Ofrecer las mejores propuestas, proyecciones, ejecuciones y soluciones a nuestros clientes, acompañada de un excelente servicio y relación laboral, para así garantizar la mayor satisfacción a las necesidades de nuestros clientes.</p>
-            </div>
-            
-            <div class="center">
-               <hr>{{ HTML::image('images/titulos/vision.png','', array('class'=>'img-responsive center-block')) }}<hr>
-               <p class="lead list-group-item">Realizar un crecimiento en todas nuestras áreas para brindar un mejor servicio mediante la actualización del desarrollo técnico y humano, y así, brindar una excelente calidad siendo una empresa totalmente responsable.</p>
-            </div> 
-            
-            <div class="center">
+            <div>
                <hr>{{ HTML::image('images/titulos/valores.png','', array('class'=>'img-responsive center-block')) }}<hr>
-            </div>
                <div class="col-sm-8" >
                    <div class="tab-wrap"> 
                         <div class="media">
@@ -36,34 +20,39 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade active in" id="tab1">
                                         <div class="media">
-                                           <div class="pull-left">
-                                                {{ HTML::image('images/tab1.png','Tab1', array('class' => 'img-responsive')) }}
-                                            </div>
-                                            <div class="media-body">
-                                                <h2>Calidad Humana y Profesional</h2>
-                                                <p><h3>Descripcion de calidad humana y profesional...</h3></p>                                            
+                                           <div>
+                                                {{ HTML::image('images/valores/tab1.png','Tab1', array('class' => 'img-responsive center-block')) }}
                                             </div>
                                         </div>
                                     </div>
-
-                                     <div class="tab-pane fade center" id="tab2">
-                                         <h2></h2>
-                                         <p></p>
-                                     </div>
-
-                                     <div class="tab-pane fade center" id="tab3">
-                                        <h2></h2>
-                                        <p></p>
-                                     </div>
-                                     
-                                     <div class="tab-pane fade center" id="tab4">
-                                       
-                                         
-                                     </div>
-
-                                     <div class="tab-pane fade" id="tab5">
-                                        <p></p>
-                                     </div>
+                                    <div class="tab-pane fade" id="tab2">
+                                        <div class="media">
+                                           <div>
+                                                {{ HTML::image('images/valores/tab2.png','Tab2', array('class' => 'img-responsive center-block')) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3">
+                                        <div class="media">
+                                           <div>
+                                                {{ HTML::image('images/valores/tab3.png','Tab3', array('class' => 'img-responsive center-block')) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab4">
+                                        <div class="media">
+                                           <div>
+                                                {{ HTML::image('images/valores/tab4.png','Tab4', array('class' => 'img-responsive center-block')) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab5">
+                                        <div class="media">
+                                           <div>
+                                                {{ HTML::image('images/valores/tab5.png','Tab5', array('class' => 'img-responsive center-block')) }}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div> <!--/.tab-content-->  
                             </div> <!--/.media-body--> 
                         </div> <!--/.media-->     
@@ -71,34 +60,23 @@
                 </div><!--/.col-sm-6-->
                 
                 <div class="col-xs-12 col-sm-4 wow fadeInDown">
-                    <div class="testimonial">
-                        <h2>Testimonios</h2>
-                         <div class="media testimonial-inner">
-                            <div class="pull-left">
-                                {{ HTML::image('images/testimonials1.png', 'Testimonials', array('class' => 'img-responsive')) }}
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
-                            </div>
-                         </div>
-
-                         <div class="media testimonial-inner">
-                            <div class="pull-left">
-                                {{ HTML::image('images/testimonials1.png', 'Testimonials', array('class' => 'img-responsive')) }}
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                                <span><strong>-John Doe/</strong> Director of corlate.com</span>
-                            </div>
-                         </div>
-
-                    </div>
+                    <hr>{{ HTML::image('images/circulo.png','', array('class'=>'img-responsive center-block')) }}<hr>
                 </div>
-                
+            </div>
+            
+            <div class="center">
+               <hr>{{ HTML::image('images/titulos/quienes.png','', array('class'=>'img-responsive center-block')) }}<hr>
+               <p class="lead list-group-item">Una empresa joven en años, con personal altamente calificado <br> con una gran experiencia en la instalación de sistemas de aire para la industría.</p>
+            </div>
+            
+            <div class="center">
+               <hr>{{ HTML::image('images/titulos/mision.png','', array('class'=>'img-responsive center-block')) }}<hr>
+               <p class="lead list-group-item">Ofrecer las mejores propuestas, proyecciones, ejecuciones y soluciones a nuestros clientes, acompañada de un excelente servicio y relación laboral, para así garantizar la mayor satisfacción a las necesidades de nuestros clientes.</p>
+            </div>
+            
+            <div class="center">
+               <hr>{{ HTML::image('images/titulos/vision.png','', array('class'=>'img-responsive center-block')) }}<hr>
+               <p class="lead list-group-item">Realizar un crecimiento en todas nuestras áreas para brindar un mejor servicio mediante la actualización del desarrollo técnico y humano, y así, brindar una excelente calidad siendo una empresa totalmente responsable.</p>
             </div> 
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#content-->
-
+        </div> 
 @stop

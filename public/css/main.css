@@ -373,11 +373,11 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #main-slider .carousel .slide-margin{
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #main-slider .carousel .carousel-content h1, h2 {
@@ -420,7 +420,7 @@ color: black;
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 730px;
+  height: 500px;
   -webkit-transition: opacity ease-in-out 500 ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
